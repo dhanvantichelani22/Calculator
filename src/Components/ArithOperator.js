@@ -30,17 +30,15 @@ const ArithOperator = (event) => {
   return (
     <div className='container'>
       <h2>React Calculator</h2>
-      <input type="number" placeholder='Num 1' value={num1} onChange={e=>setNum1(+e.target.value)}/><br/>
-      <input type="number" placeholder='Num 2' value={num2} onChange={e=>setNum1(+e.target.value)}/>
+      <input type="text" placeholder='Num 1' value={num1} onChange={e=>setNum1(+e.target.value)}/><br/>
+      <input type="text" placeholder='Num 2' value={num2} onChange={e=>setNum2(+e.target.value)}/>
     <div className='OperateBtn'>
         <button  onClick={addNum} >+</button>
         <button onClick={substractNum}>-</button>
         <button onClick={multipleNum}>*</button>
         <button onClick={divideNum}>/</button>
-        <h3>{addTotal}</h3>
-        <h3>{substractTotal}</h3>
-        <h3>{multipleTotal}</h3>
-        <h3>{divideTotal}</h3>
+        <h3>{addTotal}{substractTotal}{multipleTotal}{divideTotal}</h3>
+        
     </div>
     </div>
   )
